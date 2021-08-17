@@ -1,0 +1,153 @@
+.search {
+    width: 65%;
+    height: 100%;
+    background-color: #252d33;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.search-top ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.search-top li {
+    margin: 0px 10px;
+    color: #7d91ac;
+}
+
+i {
+    color: #7d91ac;
+}
+
+.search-top ul li:first-child {
+    font-size: .8rem;
+}
+
+#views {
+    cursor: pointer;
+}
+
+.search-images {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image div {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: #0000009f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .6rem;
+    padding: 5px;
+}
+
+.image ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.image li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.image ul i {
+    color: #fff;
+}
+
+.live {
+    color: red;
+}
+
+.image div span {
+    color: #7e9aa4;
+}
+
+.bottom-images {
+    width: calc(100% + 10px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+.bottom-image-container {
+    width: 25%;
+    height: 100px;
+    padding-right: 10px;
+    margin: 20px 0px;
+}
+
+.bottom-image {
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bottom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.bottom-image:hover img {
+    filter: brightness(.7);
+}
+
+.bottom-image span {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #0000009c;
+    padding: 3px;
+    font-size: .7rem;
+}
+
+@media (max-width: 1000px) {
+    .search {
+        width: 60%;
+    }
+}
+
+@media (max-width: 880px) {
+    .search {
+        width: 55%;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-images {
+        height: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .search {
+        width: 100%;
+        height: fit-content;
+        overflow-y: hidden;
+    }
+}

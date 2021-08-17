@@ -5,83 +5,100 @@ function SearchLeft() {
     return (
         <div className="search-left">
             
-            <div className="left-top">
-            <h3>BlackBurd</h3>
-            <div>critique <span id="orange">5</span></div>
-            <div>important <span id="blue">12</span></div>
-        </div>
-
-        <div className="left-search">
-
-            <div className="left-search-left">
-                <div>Events</div>
-                <div>List</div>
-                <div>Map</div>
+            <div className="left-sidebar">
+                <ul>
+                    <li><i class="fas fa-arrow-left"></i></li>
+                    <li><i class="fas fa-search"></i> Search</li>
+                    <li><i class="fas fa-briefcase"></i> Cases</li>
+                    <li><i class="fas fa-video"></i> Cameras</li>
+                    <li><i class="fas fa-play"></i> Videos</li>
+                    <li><i class="fas fa-clipboard-list"></i> Subjects</li>
+                    <li><i class="fas fa-shield-alt"></i> Rules</li>
+                    <li><i class="fas fa-bell"></i> Alerts</li>
+                    <li><i class="fas fa-cog"></i> Setting</li>
+                </ul>
+                <ul>
+                    <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+                </ul>
             </div>
 
-            <div className="left-search-right">
-                <input type="text" placeholder="Search cam" />
-            </div>
+            <div className="left-filter">
+                
+                <h3>Search</h3>
 
-        </div>
-
-        <div className="left-stats">
-
-            <div className="left-stats-left">
-                <h3>Daily statistic</h3>
-                <div className="stats-text">
-                    <div className="toggle">
-                        <div className="toggle-icon">
-                            <div className="toggle-circle"></div>
-                        </div>
-                        <div className="toggle-text">
-                            <span id="gray-text">last half an hour</span><br />
-                            <span>all along</span>
-                        </div>
+                <div className="for">
+                    <h5 className="for-top">FOR</h5>
+                    <div className="checkbox">
+                        <input type="checkbox" />Objects
+                        <input type="checkbox" />Subjects
                     </div>
-
-                    <div className="stats-number">
-                        <div className="number"><h1>31761</h1>ops</div>
-                        <div className="number"><h1>2791</h1>opj</div>
+                    <div className="choices">
+                        <div className="choice">
+                            Object
+                            <div>Vehicle <i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div className="choice">
+                            Directions
+                            <div>Vehicle <i class="fas fa-chevron-down"></i></div>
+                        </div>
                     </div>
                 </div>
+
+                <div className="in">
+
+                    <h5>IN</h5>
+
+                    <div className="checkbox">
+                        <input type="checkbox" />Cameras
+                        <input type="checkbox" />Videos
+                    </div>
+
+                    <div className="add">
+
+                        <ul className="add-top">
+                            <li><i class="fas fa-plus"></i> Add Camera</li>
+                            <li><i class="fas fa-minus"></i> Remove Camera</li>
+                        </ul>
+
+                        <ul className="add-table">
+                            <li>Camera name <span>Rejoin</span></li>
+                            <li>Drone Low <span>0</span></li>
+                            <li className="light">Drone Low <span>0</span></li>
+                            <li>Drone Low <span>0</span></li>
+                            <li className="light">Drone Low <span>0</span></li>
+                            <li>Drone Low <span>0</span></li>
+                            <li className="light">Drone Low <span>0</span></li>
+                            <li>Drone Low <span>0</span></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div className="during">
+
+                    <h5>DURING</h5>
+
+                    <div className="int">
+                        Start
+                        <input type="date" />
+                    </div>
+                    <div className="int">
+                        End
+                        <input type="date" />
+                    </div>
+
+                </div>
+
+                <div className="validate">
+                    <button><i class="far fa-times-circle"></i></button>
+                    <button>Live</button>
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+
             </div>
 
-        </div>
-
-        <div className="line"></div>
-
-        <div className="filters">
-
-            <div className="filter">
-                <h4>Search for</h4>
-                <div><span>Object</span><span>Subject</span></div>
-            </div>
-
-            <div className="filter">
-                <h4>Search in</h4>
-                <div><span>Camera</span><span>Video</span></div>
-            </div>
-
-        </div>
-
-        <div className="during">
-            <h4 className="during-title">Search during</h4>
-            <div className="during-input">
-                <h4>Start</h4>
-                <input type="date" />
-            </div>
-            <div className="during-input">
-                <h4>End</h4>
-                <input type="date" />
-            </div>
-        </div>
-
-        <div className="validate">
-            <button className="close"><i class="fas fa-times"></i></button>
-            <button className="live-button">Live</button>
-            <button className="search-button"><i class="fas fa-search"></i>Search</button>
-        </div>
+            
 
         </div>
     )

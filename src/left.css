@@ -1,0 +1,272 @@
+.left {
+    width: 35%;
+    height: 100%;
+    background-color: #252d33;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.left-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left-top h3 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.left-top div {
+    margin-left: 20px;
+    font-size: .8rem;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+#orange {
+    background: #e9620a;
+    padding: 0px 5px;
+    font-weight: 800;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+
+#blue {
+    background: #6fa0b7;
+    padding: 0px 5px;
+    font-weight: 800;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.left-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-search-left {
+    width: 40%;
+    display: flex;
+    height: fit-content;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.left-search-left div {
+    width: 33.33%;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: .7rem;
+    background: #38414e;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.left-search-left div:hover {
+    background: #272f37;
+}
+
+.left-search-right {
+    width: 55%;
+    height: fit-content;
+}
+
+.left-search-right input {
+    width: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #38414e;
+    border-radius: 3px;
+    outline: none;
+    font-size: .7rem;
+}
+
+.left-stats {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stats-text {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icon {
+    width: 15px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    transition: .5s;
+}
+
+.toggle-icon-active {
+    align-items: flex-start;
+}
+
+.toggle-circle {
+    width: 100%;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.toggle-text {
+    font-size: .7rem;
+    margin-left: 10px;
+}
+
+#gray-text {
+    color: gray;
+}
+
+.stats-number {
+    display: flex;
+}
+
+.number {
+    border-top: 1px solid #e9620a;
+    border-left: 1px solid #e9620a;
+    border-bottom: 1px solid #7e9aa4;
+    border-right: 1px solid #7e9aa4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    font-size: .7rem;
+}
+
+.number:first-child {
+    margin-right: 10px;
+}
+
+.number h1 {
+    font-size: 1.7rem;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    background: #38414e;
+    margin: 20px auto;
+}
+
+.sections {
+    width: 100%;
+    font-size: .6rem;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+}
+
+.sections td {
+    background: #38414e;
+    padding: 5px 10px;
+}
+
+.sections tr td:first-child {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.sections tr td:last-child {
+    border-radius: 0px 3px 3px 0px;
+    text-align: center;
+}
+
+.sections td span {
+    background-color: lightgray;
+    padding: 2px 5px;
+    color: #000;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.sections tr.orange td {
+    color: #e9620a;
+}
+
+.sections tr {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.sections tr:hover {
+    opacity: .6;
+}
+
+.sections tr.orange td:first-child {
+    border-left: 2px solid #e9620a;
+}
+
+.sections.second {
+    border-collapse: collapse;
+}
+
+.sections.second tr td {
+    border-radius: 0px;
+}
+
+.sections.second {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sections.second .blue td {
+    color: #6fa0b7;
+}
+
+.sections.second .blue td:first-child {
+    border-left: 2px solid #6fa0b7;
+}
+
+.sections.second .blue td span {
+    background-color: #6fa0b7;
+}
+
+@media (max-width: 1000px) {
+    .left {
+        width: 40%;
+    }
+}
+
+@media (max-width: 880px) {
+    .left {
+        width: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    .number h1 {
+        font-size: 1.4rem;
+    }
+
+    .number {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .left {
+        width: 100%;
+        height: fit-content;
+        overflow-y: hidden;
+    }
+}

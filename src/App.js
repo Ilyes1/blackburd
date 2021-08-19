@@ -8,8 +8,11 @@ function App() {
   return (
     <div className="App">
       
-      <SearchLeft />
-      <Search />
+      <Left />
+      <Right />
+      
+      {/* <SearchLeft />
+      <Search /> */}
 
     </div>
   );

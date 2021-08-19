@@ -39,19 +39,19 @@ i {
     overflow: hidden;
 }
 
-.image {
+.right-image {
     width: 50%;
     height: 50%;
     position: relative;
 }
 
-.image img {
+.right-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.image div {
+.right-image div {
     position: absolute;
     width: 100%;
     top: 0;
@@ -63,16 +63,16 @@ i {
     padding: 5px;
 }
 
-.image ul {
+.right-image ul {
     list-style-type: none;
     display: flex;
 }
 
-.image li:not(:last-child) {
+.right-image li:not(:last-child) {
     margin-right: 10px;
 }
 
-.image ul i {
+.right-image ul i {
     color: #fff;
 }
 
@@ -80,7 +80,7 @@ i {
     color: red;
 }
 
-.image div span {
+.right-image div span {
     color: #7e9aa4;
 }
 

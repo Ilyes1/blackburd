@@ -20,7 +20,7 @@ function Right() {
 
         <div className="right-images">
 
-            <div className="image">
+            <div className="right-image">
                 <img src={image1} alt="" />
                 <div>
                     <span>OD-788</span>
@@ -34,7 +34,7 @@ function Right() {
                     </ul>
                 </div>
             </div>
-            <div className="image">
+            <div className="right-image">
                 <img src={image2} alt="" />
                 <div>
                     <span>OD-788</span>
@@ -48,7 +48,7 @@ function Right() {
                     </ul>
                 </div>
             </div>
-            <div className="image">
+            <div className="right-image">
                 <img src={image3} alt="" />
                 <div>
                     <span>OD-788</span>
@@ -62,7 +62,7 @@ function Right() {
                     </ul>
                 </div>
             </div>
-            <div className="image">
+            <div className="right-image">
                 <img src={image4} alt="" />
                 <div>
                     <span>OD-788</span>
